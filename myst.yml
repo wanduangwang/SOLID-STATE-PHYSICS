@@ -2,27 +2,81 @@
 version: 1
 project:
   id: dd87a4b4-1a67-4f0b-8bef-3033d3636d9f
-  # Table of contents lives in the separate _toc.yml (MyST v1 `extends` mechanism).
-  extends:
-    - _toc.yml
+  # Table of contents is embedded directly (MyST v1 schema, mirrors General-Chemistry).
+  toc:
+    - file: index.md
+    - title: Part I — Transport
+      children:
+        - file: chapters/p1-ch01-energy-dispersion.md
+        - file: chapters/p1-ch02-examples-bands.md
+        - file: chapters/p1-ch03-perturbation.md
+        - file: chapters/p1-ch04-effective-mass.md
+        - file: chapters/p1-ch05-transport-phenomena.md
+        - file: chapters/p1-ch06-thermal-transport.md
+        - file: chapters/p1-ch07-electron-phonon-scattering.md
+        - file: chapters/p1-ch08-harmonic-phonons-eph.md
+        - file: chapters/p1-ch09-2deg-electron-gas.md
+        - file: chapters/p1-ch10-low-dimensional.md
+        - file: chapters/app-transport-A.md
+        - file: chapters/app-transport-B.md
+        - file: chapters/app-transport-C.md
+        - file: chapters/app-transport-D.md
+        - file: chapters/app-transport-E.md
+        - file: chapters/app-transport-F.md
+        - file: chapters/app-transport-G.md
+    - title: Part II — Optical
+      children:
+        - file: chapters/p2-ch01-fundamental-relations.md
+        - file: chapters/p2-ch02-drude-theory.md
+        - file: chapters/p2-ch03-interband-transitions.md
+        - file: chapters/p2-ch04-joint-density-states.md
+        - file: chapters/p2-ch05-absorption-light.md
+        - file: chapters/p2-ch06-optical-properties-wide-range.md
+        - file: chapters/p2-ch07-impurities-excitons.md
+        - file: chapters/p2-ch08-luminescence-photoconductivity.md
+        - file: chapters/p2-ch09-missing.md
+        - file: chapters/p2-ch10-lattice-vibrations.md
+        - file: chapters/p2-ch11-nonlinear-optics.md
+        - file: chapters/p2-ch12-electron-spectroscopy.md
+        - file: chapters/p2-ch13-amorphous-semiconductors.md
+        - file: chapters/app-optical-A.md
+        - file: chapters/app-optical-B.md
+        - file: chapters/app-optical-C.md
+    - title: Part III — Magnetic
+      children:
+        - file: chapters/p3-ch01-angular-momentum.md
+        - file: chapters/p3-ch02-magnetic-effects-free-atoms.md
+        - file: chapters/p3-ch03-diamagnetism-paramagnetism-bound.md
+        - file: chapters/p3-ch04-paramagnetism-diamagnetism-free-electrons.md
+        - file: chapters/p3-ch05-landau-levels.md
+        - file: chapters/p3-ch06-quantum-hall-effect.md
+        - file: chapters/p3-ch07-magnetic-ordering.md
+        - file: chapters/p3-ch08-magnetic-devices.md
+    - title: Part IV — Superconducting
+      children:
+        - file: chapters/p4-ch01-superconducting-properties.md
+        - file: chapters/p4-ch02-macroscopic-quantum.md
+        - file: chapters/p4-ch03-microscopic-quantum.md
+        - file: chapters/p4-ch04-high-tc-cuprates.md
   authors: ["Gene Dresselhaus, Mildred Dresselhaus, et al."]
   github: https://github.com/wanduangwang/SOLID-STATE-PHYSICS
 site:
   template: book-theme
-  # Math engine: MyST renders math with MathJax by default for the HTML/book-theme
-  # output, which is required for Dirac notation, tensors and complex sub/superscripts.
+  # NOTE: base_url is "/" for LOCAL acceptance/preview (myst start).
+  # Before the GitHub Pages deploy (gated on local acceptance), change this to
+  # "/SOLID-STATE-PHYSICS/" so assets resolve under the project subpath.
   title: Solid State Physics — MIT 6.732 Lecture Notes
   options:
-    hide_toc: false       # Hide the table of contents in the sidebar
-    hide_outline: false    # Hide the outline (the floating table of contents)
+    hide_toc: false
+    hide_outline: false
     logo_text: Solid State Physics
-    base_url: /SOLID-STATE-PHYSICS/
+    base_url: /
   nav:
     - title: Book
       url: /index
-    - title: OpenScienceTeam
-      url: https://openscienceteam.github.io/OpenScience/
+    - title: OpenScience
+      url: https://github.com/OpenScienceTeam
   actions:
-    - title: wanduangwang
-      url: https://github.com/wanduangwang/SOLID-STATE-PHYSICS
+    - title: OpenScience
+      url: https://github.com/OpenScienceTeam
   domains: []
