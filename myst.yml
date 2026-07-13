@@ -1,0 +1,28 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: dd87a4b4-1a67-4f0b-8bef-3033d3636d9f
+  # Table of contents lives in the separate _toc.yml (MyST v1 `extends` mechanism).
+  extends:
+    - _toc.yml
+  authors: ["Gene Dresselhaus, Mildred Dresselhaus, et al."]
+  github: https://github.com/wanduangwang/SOLID-STATE-PHYSICS
+site:
+  template: book-theme
+  # Math engine: MyST renders math with MathJax by default for the HTML/book-theme
+  # output, which is required for Dirac notation, tensors and complex sub/superscripts.
+  title: Solid State Physics — MIT 6.732 Lecture Notes
+  options:
+    hide_toc: false       # Hide the table of contents in the sidebar
+    hide_outline: false    # Hide the outline (the floating table of contents)
+    logo_text: Solid State Physics
+    base_url: /SOLID-STATE-PHYSICS/
+  nav:
+    - title: Book
+      url: /index
+    - title: OpenScienceTeam
+      url: https://openscienceteam.github.io/OpenScience/
+  actions:
+    - title: wanduangwang
+      url: https://github.com/wanduangwang/SOLID-STATE-PHYSICS
+  domains: []

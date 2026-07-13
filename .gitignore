@@ -4,3 +4,8 @@ _backup
 _figures
 _tables
 .ipynb_checkpoints
+node_modules
+_site
+# PM coordination files live OUTSIDE this repo; ignore if accidentally placed here.
+ai/
+.workbuddy/
