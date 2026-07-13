@@ -58,14 +58,14 @@ project:
         - file: chapters/p4-ch02-macroscopic-quantum.md
         - file: chapters/p4-ch03-microscopic-quantum.md
         - file: chapters/p4-ch04-high-tc-cuprates.md
-  authors: ["Gene Dresselhaus, Mildred Dresselhaus, et al."]
+  authors: [OpenScienceTeam]
   github: https://github.com/wanduangwang/SOLID-STATE-PHYSICS
 site:
   template: book-theme
   # NOTE: base_url is "/" for LOCAL acceptance/preview (myst start).
   # Before the GitHub Pages deploy (gated on local acceptance), change this to
   # "/SOLID-STATE-PHYSICS/" so assets resolve under the project subpath.
-  title: Solid State Physics — MIT 6.732 Lecture Notes
+  title: Solid State Physics
   options:
     hide_toc: false
     hide_outline: false
