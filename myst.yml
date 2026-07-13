@@ -73,7 +73,7 @@ site:
     base_url: /
   nav:
     - title: Book
-      url: /chapters/p1-ch01-energy-dispersion
+      url: /p1-ch01-energy-dispersion
     - title: OpenScience
       url: https://github.com/OpenScienceTeam
   actions:

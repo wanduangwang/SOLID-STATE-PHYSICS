@@ -14,7 +14,7 @@ An open-source, expert-edited companion to MIT 6.732 *Solid State Physics* (Dres
 
 ![Solid State Physics cover](./Figure-1.png)
 
-{button}`Get Started </chapters/p1-ch01-energy-dispersion>`
+{button}`Get Started </p1-ch01-energy-dispersion>`
 
 +++
 
