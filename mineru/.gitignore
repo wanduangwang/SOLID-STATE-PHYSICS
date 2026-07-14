@@ -1,0 +1,3 @@
+# MinerU parse output is produced locally or downloaded as a CI artifact.
+# Do NOT commit the bulky output (zip, images, origin pdf, layout json).
+output/

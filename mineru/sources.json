@@ -1,0 +1,7 @@
+[
+  {
+    "name": "pt3-magnetism",
+    "url": "",
+    "note": "MIT 6.732 Part III (Magnetic Properties of Solids). Set 'url' to a publicly hosted PDF, or set the MINERU_PDF_URL repository secret to activate CI parsing."
+  }
+]

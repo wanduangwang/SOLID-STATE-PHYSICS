@@ -1,0 +1,79 @@
+name: MinerU PDF Parse
+
+on:
+  push:
+    branches: [mineru]
+  workflow_dispatch:
+    inputs:
+      pdf_url:
+        description: "Optional remote PDF URL to parse (overrides sources.json)"
+        required: false
+        default: ""
+      model:
+        description: "MinerU model version"
+        required: false
+        default: "vlm"
+      language:
+        description: "Content language"
+        required: false
+        default: "en"
+
+permissions:
+  contents: read
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Resolve PDF source
+        id: src
+        env:
+          DISPATCH_URL: ${{ github.event.inputs.pdf_url }}
+          SECRET_URL: ${{ secrets.MINERU_PDF_URL }}
+        run: |
+          URL="$DISPATCH_URL"
+          if [ -z "$URL" ]; then URL="$SECRET_URL"; fi
+          if [ -z "$URL" ]; then
+            URL=$(python - <<'PY'
+          import json
+          try:
+              data = json.load(open('mineru/sources.json'))
+              for it in data:
+                  if it.get('url'):
+                      print(it['url'])
+                      break
+          except Exception:
+              pass
+          PY
+          )
+          fi
+          echo "pdf_url=$URL" >> "$GITHUB_OUTPUT"
+          if [ -z "$URL" ]; then
+            echo "::warning::No PDF source configured (set MINERU_PDF_URL secret or workflow_dispatch pdf_url). Skipping parse."
+          fi
+
+      - name: Parse PDF with MinerU
+        if: ${{ steps.src.outputs.pdf_url != '' }}
+        env:
+          MINERU_TOKEN: ${{ secrets.MINERU_TOKEN }}
+          PDF_URL: ${{ steps.src.outputs.pdf_url }}
+          MODEL: ${{ github.event.inputs.model || 'vlm' }}
+          LANGUAGE: ${{ github.event.inputs.language || 'en' }}
+        run: |
+          python mineru/parse_pdf.py --url "$PDF_URL" --out mineru/output --model "$MODEL" --language "$LANGUAGE"
+
+      - name: Upload parse output
+        if: ${{ steps.src.outputs.pdf_url != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: mineru-output
+          path: mineru/output
+          retention-days: 14
