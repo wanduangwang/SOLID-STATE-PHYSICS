@@ -1,0 +1,216 @@
+================================================================
+ p3-ch07-magnetic-ordering.md  BUILD ERROR EXTRACTION
+ Generated: 2026-07-19 12:55:12 UTC
+ Source log: /tmp/ssp_p307.log
+================================================================
+
+SUMMARY COUNTS:
+  total log lines ............ 179
+  total errors (⛔) ........... 42
+  total warnings ............. 0
+  'Unexpected character' msgs  42
+  mentions of p3-ch07 ......... 44 (42 errors + 2 'Built' lines)
+  KaTeX mentions .............. 0
+  math mentions .............. 5
+
+Every error is: Unexpected character: '\' (stray/trailing backslash).
+All 42 errors occur in chapters/p3-ch07-magnetic-ordering.md.
+
+================================================================
+ EXTRACTED ERROR LINES (log line number : message)
+ Each block = error line + the captured equation string (1 line context).
+================================================================
+5:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 175: …ec {x} _ {1}) ]\̲
+6-   \psi (\vec {x} _ {1}, \vec {x} _ {2}) = \frac {1}{\sqrt {2}} [ \psi_ {1} (\vec {x} _ {1}) \psi_ {2} (\vec {x} _ {2}) - \psi_ {1} (\vec {x} _ {2}) \psi_ {2} (\vec {x} _ {1}) ]\
+7:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 483: …{A} \end{array}\̲
+8-   \begin{array}{c} \psi_ {1} (\vec {x} _ {1}, \vec {x} _ {2}) = \bigg (\frac {1}{\sqrt {2}} \bigg) [ \psi_ {1} (\vec {r} _ {1}) \alpha_ {1} \psi_ {2} (\vec {r} _ {2}) \alpha_ {2} - \psi_ {1} (\vec {r} _ {2}) \alpha_ {2} \psi_ {2} (\vec {r} _ {1}) \alpha_ {1} ] \\ = \alpha_ {1} \alpha_ {2} \bigg (\frac {1}{\sqrt {2}} \bigg) [ \psi_ {1} (\vec {r} _ {1}) \psi_ {2} (\vec {r} _ {2}) - \psi_ {1} (\vec {r} _ {2}) \psi_ {2} (\vec {r} _ {1}) ] \equiv \chi^ {S} (1, 1) \Psi^ {A} \end{array}\
+9:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 262: … - 1) \Psi^ {A}\̲
+10-   \psi_ {2} (\vec {x} _ {1}, \vec {x} _ {2}) = \beta_ {1} \beta_ {2} \left(\frac {1}{\sqrt {2}}\right) \left[ \psi_ {1} (\vec {r} _ {1}) \psi_ {2} (\vec {r} _ {2}) - \psi_ {1} (\vec {r} _ {2}) \psi_ {2} (\vec {r} _ {1}) \right] \equiv \chi^ {S} (1, - 1) \Psi^ {A}\
+11:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 398: …ha_ {1} \right]\̲
+12-   \left(\frac {1}{2}\right) \left[ \psi_ {1} (\vec {r} _ {1}) \alpha_ {1} \psi_ {2} (\vec {r} _ {2}) \beta_ {2} - \psi_ {1} (\vec {r} _ {2}) \alpha_ {2} \psi_ {2} (\vec {r} _ {1}) \beta_ {1} \right] \pm \left(\frac {1}{2}\right) \left[ \psi_ {1} (\vec {r} _ {1}) \beta_ {1} \psi_ {2} (\vec {r} _ {2}) \alpha_ {2} - \psi_ {1} (\vec {r} _ {2}) \beta_ {2} \psi_ {2} (\vec {r} _ {1}) \alpha_ {1} \right]\
+13:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 313: …1, 0) \Psi^ {A}\̲
+14-   \psi_ {3} (\vec {x} _ {1}, \vec {x} _ {2}) = \left(\frac {1}{\sqrt {2}}\right) [ \alpha_ {1} \beta_ {2} + \alpha_ {2} \beta_ {1} ] \left(\frac {1}{\sqrt {2}}\right) [ \psi_ {1} (\vec {r} _ {1}) \psi_ {2} (\vec {r} _ {2}) - \psi_ {1} (\vec {r} _ {2}) \psi_ {2} (\vec {r} _ {1}) ] \equiv \chi^ {S} (1, 0) \Psi^ {A}\
+15:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 336: …, 0) \Psi^ {S}.\̲
+16-   \psi_ {4} (\vec {x} _ {1}, \vec {x} _ {2}) = \left(\frac {1}{\sqrt {2}}\right) \left[ \alpha_ {1} \beta_ {2} - \alpha_ {2} \beta_ {1} \right] \left(\frac {1}{\sqrt {2}}\right) \left[ \psi_ {1} (\vec {r} _ {1}) \psi_ {2} (\vec {r} _ {2}) + \psi_ {1} (\vec {r} _ {2}) \psi_ {2} (\vec {r} _ {1}) \right] \equiv \chi^ {A} (1, 0) \Psi^ {S}.\
+17:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 438: …{array} \right|\̲
+18-   \Psi (\vec {x} _ {1} \dots , \vec {x} _ {n}) = \frac {1}{\sqrt {n !}} \left| \begin{array}{c c c c} \psi_ {1} (\vec {x} _ {1}) & \psi_ {1} (\vec {x} _ {2}) & \ldots & \psi_ {1} (\vec {x} _ {n}) \\ \psi_ {2} (\vec {x} _ {1}) & \psi_ {2} (\vec {x} _ {2}) & \ldots & \psi_ {2} (\vec {x} _ {n}) \\ \vdots & \vdots & & \vdots \\ \psi_ {n} (\vec {x} _ {1}) & \psi_ {n} (\vec {x} _ {2}) & \ldots & \psi_ {n} (\vec {x} _ {n}) \end{array} \right|\
+19:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 113: …0 8 \mathrm{eV}\̲
+20-   J _ {i j} \sim \frac {3}{2} \frac {0 . 0 2 4 (1 0 4 3 / 3 0 0)}{8 (1) (2)} \mathrm{eV} \sim 0. 0 0 8 \mathrm{eV}\
+21:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 193: … \vec {S _ {i}}\̲
+22-   \mathcal {H} = - 2 J \vec {S _ {i}} \cdot \sum_ {j = 1} ^ {z} \vec {S _ {j}} - g \mu_ {B} \vec {B _ {e f f}} \cdot \sum_ {j = 1} ^ {z} \vec {S _ {j}} - g \mu_ {B} \vec {B} \cdot \vec {S _ {i}}\
+23:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 160: …{A B}} M _ {B})\̲
+24-   M _ {A} = \left(\frac {C _ {A}}{T}\right) H _ {A t o t a l} = \left(\frac {C _ {A}}{T}\right) (H - \lambda_ {M _ {A A}} M _ {A} - \lambda_ {M _ {A B}} M _ {B})\
+25:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 160: …{B B}} M _ {B})\̲
+26-   M _ {B} = \left(\frac {C _ {B}}{T}\right) H _ {B t o t a l} = \left(\frac {C _ {B}}{T}\right) (H - \lambda_ {M _ {A B}} M _ {A} - \lambda_ {M _ {B B}} M _ {B})\
+27:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 82: …u}}{3 k _ {B}},\̲
+28-   C _ {A} = \frac {N _ {A} g ^ {2} \mu_ {B} ^ {2} j (j + 1) \hat {\mu}}{3 k _ {B}},\
+29:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 37: … + M _ {B}}{H}.\̲
+30-   \chi = \frac {M _ {A} + M _ {B}}{H}.\
+31:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 63: …a_ {M} M _ {B})\̲
+32-   M _ {A} = \left(\frac {C}{T}\right) (H - \lambda_ {M} M _ {B})\
+33:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 63: …a_ {M} M _ {A})\̲
+34-   M _ {B} = \left(\frac {C}{T}\right) (H - \lambda_ {M} M _ {A})\
+35:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 132: …\right) \right]\̲
+36-   M _ {B} = \left(\frac {C}{T}\right) \left[ H - \left(\lambda_ {M} \frac {C}{T}\right) \left(H - \lambda_ {M} M _ {B}\right) \right]\
+37:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 124: …{C}{T}\right) H\̲
+38-   M _ {B} (1 - \lambda_ {M} ^ {2} C ^ {2} / T ^ {2}) = \left(\frac {C}{T}\right) \left(1 - \lambda_ {M} \frac {C}{T}\right) H\
+39:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 68: … \frac {C H}{T}\̲
+40-   M _ {B} \left(1 + \lambda_ {M} \frac {C}{T}\right) = \frac {C H}{T}\
+41:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 122: …u}}{3 k _ {B}}.\̲
+42-   T _ {c} = \lambda_ {M} C \qquad \mathrm{and} \qquad C = \frac {N g ^ {2} \mu_ {B} ^ {2} j (j + 1) \hat {\mu}}{3 k _ {B}}.\
+43:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 44: …lambda_ {M} C)}\̲
+44-   M _ {A} = \frac {C H}{(T + \lambda_ {M} C)}\
+45:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 26: …\lambda_ {M} C.\̲
+46-   T _ {c} = \lambda_ {M} C.\
+47:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 90: … \vec {H} _ {p}\̲
+48-   \hbar \bigg (\frac {d \vec {S} _ {p}}{d t} \bigg) = \vec {\mu_ {p}} \times \vec {H} _ {p}\
+49:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 124: … {p + 1} ^ {y})\̲
+50-   \frac {d S _ {p} ^ {x}}{d t} = \bigg (\frac {2 J S}{\hbar} \bigg) (2 S _ {p} ^ {y} - S _ {p - 1} ^ {y} - S _ {p + 1} ^ {y})\
+51:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 126: … {p + 1} ^ {x})\̲
+52-   \frac {d S _ {p} ^ {y}}{d t} = - \bigg (\frac {2 J S}{\hbar} \bigg) (2 S _ {p} ^ {x} - S _ {p - 1} ^ {x} - S _ {p + 1} ^ {x})\
+53:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 34: … {z}}{d t} = 0.\̲
+54-   \frac {d S _ {p} ^ {z}}{d t} = 0.\
+55:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 68: …- 2 \cos k a) v\̲
+56-   - i \omega u = \left(\frac {2 J S}{\hbar}\right) (2 - 2 \cos k a) v\
+57:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 71: …- 2 \cos k a) u\̲
+58-   - i \omega v = - \bigg (\frac {2 J S}{\hbar} \bigg) (2 - 2 \cos k a) u\
+59:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 175: …ay} \right| = 0\̲
+60-   \left| \begin{array}{c c} i \omega & \left(\frac {4 J S}{\hbar}\right) (1 - \cos k a) \\ - \left(\frac {4 J S}{\hbar}\right) (1 - \cos k a) & i \omega \end{array} \right| = 0\
+61:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 46: …(1 - \cos k a).\̲
+62-   \omega_ {k} = (4 J S / \hbar) (1 - \cos k a).\
+63:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 129: …) d \omega_ {k}\̲
+64-   \rho (\omega_ {k}) d \omega_ {k} = \frac {1}{(2 \pi) ^ {3}} 4 \pi k ^ {2} \bigg (\frac {d k}{d \omega_ {k}} \bigg) d \omega_ {k}\
+65:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 67: … d \omega_ {k}.\̲
+66-   \sum_ {k} n _ {k} = \int n _ {k} \rho (\omega_ {k}) d \omega_ {k}.\
+67:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 110: …hbar} a ^ {2} k\̲
+68-   \frac {d \omega_ {k}}{d k} = \left(\frac {4 J S}{\hbar}\right) a \sin k a \sim \frac {4 J S}{\hbar} a ^ {2} k\
+69:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 118: …k ^ {2} a ^ {2}\̲
+70-   \omega_ {k} = \left(\frac {4 J S}{\hbar}\right) (1 - \cos k a) \sim \left(\frac {2 J S}{\hbar}\right) k ^ {2} a ^ {2}\
+71:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 75: …_ {k}}{2 J S}}.\̲
+72-   k \sim \left(\frac {1}{a}\right) \sqrt {\frac {\hbar \omega_ {k}}{2 J S}}.\
+73:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 143: … _ {B} T} - 1)}\̲
+74-   \sum_ {k} n _ {k} \simeq \frac {1}{2} \pi^ {2} \int \frac {(\hbar k d \omega_ {k})}{(4 J S a ^ {2}) (e ^ {\hbar \omega_ {k} / k _ {B} T} - 1)}\
+75:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 197: …k _ {B} T} - 1}\̲
+76-   \sum_ {k} n _ {k} = \left(\frac {\hbar}{8 \pi^ {2} J S a ^ {3}}\right) \sqrt {\frac {\hbar}{2 J S}} \int \frac {\omega_ {k} ^ {\frac {1}{2}} d \omega_ {k}}{e ^ {\hbar \omega_ {k} / k _ {B} T} - 1}\
+77:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 41: …{k}}{k _ {B} T}\̲
+78-   x = \frac {\hbar \omega_ {k}}{k _ {B} T}\
+79:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 172: …x}{e ^ {x} - 1}\̲
+80-   \sum_ {k} n _ {k} \cong (\frac {1}{4 \pi^ {2}}) \biggl (\frac {k _ {B} T}{2 J S a ^ {2}} \biggr) ^ {3 / 2} \int_ {0} ^ {\infty} x ^ {\frac {1}{2}} \frac {d x}{e ^ {x} - 1}\
+81:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 69: … _ {k = 0} = 0.\̲
+82-   \left(\frac {\partial \omega_ {k}}{\partial k}\right) _ {k = 0} = 0.\
+83:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 58: …\vec {S _ {j}}.\̲
+84-   \mathcal {H} = - 2 J \vec {S _ {i}} \cdot \vec {S _ {j}}.\
+85:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 44: … {2} / N ^ {2}.\̲
+86-   E _ {e x} = N J S ^ {2} \pi^ {2} / N ^ {2}.\
+87:⛔️ chapters\p3-ch07-magnetic-ordering.md Unexpected character: '\' at position 99: … a ^ {2}} + K a\̲
+88-   \frac {\partial \sigma_ {W}}{\partial N} = 0 = - \frac {J S ^ {2} \pi^ {2}}{N ^ {2} a ^ {2}} + K a\
+
+================================================================
+ CATEGORIZED FAILURE PATTERNS (Step 4)
+================================================================
+
+ROOT CAUSE OF ALL 42 ERRORS: a stray TRAILING BACKSLASH '' at the
+end of each of the 42 display-math blocks (Pattern C). KaTeX reads the
+final '' as an incomplete escape/command and aborts with
+"Unexpected character: ''". Every one of the 42 build errors is this.
+
+Pattern A  - spaced command args (\cmd {x} instead of \cmd{x})
+            COUNT (source): 141  (vec 64, frac 62, sqrt 11, hat 2, mathcal 2)
+            HARMLESS: KaTeX/MyST tolerate spaces; NOT an error cause.
+            MyST even re-serializes all math with these spaces in the
+            built JSON, proving they are tolerated. Cosmetic only.
+            Example: eq-p3-ch07-40  ->  \psi (ec {x} _ {1}, ...)]\
+
+Pattern B  - spaced decimals / digits (0 . 0 2 4, 1 0 4 3)
+            COUNT (source): 5 groups, confined to ONE equation
+            (eq-p3-ch07-57, line 502: J~ exchange estimate).
+            HARMLESS to the build (KaTeX ignores spaces) but produces
+            ugly '0.024' spacing; needs human normalization.
+            Example: eq-p3-ch07-57 -> ...{0 . 0 2 4 (1 0 4 3 / 3 0 0)}...
+
+Pattern C  - stray/trailing backslash at end of math block
+            COUNT (errors): 42  -- THIS IS THE SOLE ERROR CAUSE.
+            NOTE: legitimate '\' line-breaks inside arrays (e.g. lines
+            393-395 of the determinant block) are fine and NOT errors.
+            Example: eq-p3-ch07-40 ends '...] '  ; eq-p3-ch07-57 ends '...eV'
+
+Pattern D  - leftover 	ag{ or other raw-LaTeX residue
+            COUNT: 0  (none found).
+
+Pattern E  - other
+            COUNT: 0. No other failure classes detected; all 42 messages
+            are identical in kind (trailing backslash).
+
+================================================================
+ EQUATION -> PATTERN MAP (Step 5)
+================================================================
+All 42 failing equations fail for Pattern C (trailing '').
+The 42 erroring labels (source line of the trailing backslash shown):
+
+  eq-p3-ch07-40  (line 399)
+  eq-p3-ch07-41  (line 403)
+  eq-p3-ch07-42  (line 407)
+  eq-p3-ch07-43  (line 411)
+  eq-p3-ch07-44  (line 415)
+  eq-p3-ch07-45  (line 419)
+  eq-p3-ch07-46  (line 423)
+  eq-p3-ch07-57  (line 500)
+  eq-p3-ch07-58  (line 504)
+  eq-p3-ch07-64  (line 554)
+  eq-p3-ch07-65  (line 558)
+  eq-p3-ch07-66  (line 562)
+  eq-p3-ch07-68  (line 573)
+  eq-p3-ch07-70  (line 584)
+  eq-p3-ch07-71  (line 588)
+  eq-p3-ch07-72  (line 592)
+  eq-p3-ch07-73  (line 596)
+  eq-p3-ch07-74  (line 600)
+  eq-p3-ch07-76  (line 611)
+  eq-p3-ch07-77  (line 615)
+  eq-p3-ch07-80  (line 631)
+  eq-p3-ch07-87  (line 723)
+  eq-p3-ch07-89  (line 734)
+  eq-p3-ch07-90  (line 738)
+  eq-p3-ch07-91  (line 742)
+  eq-p3-ch07-94  (line 757)
+  eq-p3-ch07-95  (line 761)
+  eq-p3-ch07-96  (line 765)
+  eq-p3-ch07-100  (line 799)
+  eq-p3-ch07-102  (line 810)
+  eq-p3-ch07-103  (line 814)
+  eq-p3-ch07-104  (line 818)
+  eq-p3-ch07-105  (line 822)
+  eq-p3-ch07-106  (line 826)
+  eq-p3-ch07-107  (line 830)
+  eq-p3-ch07-108  (line 834)
+  eq-p3-ch07-109  (line 838)
+  eq-p3-ch07-110  (line 842)
+  eq-p3-ch07-113  (line 862)
+  eq-p3-ch07-115  (line 891)
+  eq-p3-ch07-117  (line 947)
+  eq-p3-ch07-120  (line 962)
+
+Spaced-decimal (Pattern B) also present in: eq-p3-ch07-57 (line 502).
+Equations carrying spaced commands (Pattern A) include, among others,
+eq-p3-ch07-40..46, 57, 64..77, 87..96, 100..120 (i.e. essentially all
+of the 42 inserted blocks). Pattern A does NOT cause errors.
+
+================================================================
+ FIX PLAN (Step 6 - NOT EXECUTED)
+================================================================
+1) Pattern C (trailing backslash) - SAFE TO AUTO-FIX.
+   For each ```{math} block, strip a SINGLE trailing '' that is the
+   last non-whitespace char before the closing ``` fence. Must NOT touch
+   internal '\' line-breaks or '' inside the body. Regex per block:
+   content.rstrip().rstrip('\') only if it does not end with '\\'.
+   After fix, re-run `myst build` -> expect 0 errors.
+2) Pattern A (spaced commands) - SAFE TO AUTO-FIX (cosmetic).
+   regex s/\(\w+) +\{/\{/g  collapses '\cmd {' -> '\cmd{'.
+   Preserves math meaning. Optional; not required to clear errors.
+3) Pattern B (spaced decimals) - NEEDS HUMAN EYES.
+   Collapsing '0 . 0 2 4' -> '0.024' changes numeric rendering; only a
+   human can confirm OCR spacing vs. intentional subtraction/range.
+   Recommend targeted manual edit of eq-p3-ch07-57 (and any similar).
+4) Pattern D - none; nothing to do.
+RISK: auto-fix must preserve math correctness; verify with a rebuild.
+================================================================

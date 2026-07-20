@@ -1,0 +1,74 @@
+# CI/CD for the `img-optimize` branch of Solid State Physics.
+# Builds the MyST site and, on push, deploys it to GitHub Pages for live preview.
+#
+# IMPORTANT: pushing to `img-optimize` will deploy THIS branch to the repo's
+# GitHub Pages site, temporarily overriding whatever `main` deployed via
+# .github/workflows/deploy.yml. After `img-optimize` is merged into `main`,
+# the `main` deploy workflow resumes ownership of the live site.
+#
+# To make this workflow build-only (no Pages override), delete the `deploy`
+# job below and remove `pages: write` / `id-token: write` from `permissions`.
+#
+# REQUIRED repo setting: Settings → Pages → Build and deployment → Source =
+# "GitHub Actions".
+
+name: img-optimize CI & Pages Deploy
+
+on:
+  push:
+    branches: [img-optimize]
+  pull_request:
+    branches: [img-optimize]
+  workflow_dispatch:
+
+env:
+  BASE_URL: /${{ github.event.repository.name }}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Separate concurrency group from `main`'s deploy so the two don't cancel each other.
+concurrency:
+  group: 'pages-img-optimize'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+      - name: Install MyST
+        run: npm install -g mystmd
+      - name: Fix base_url for GitHub Pages
+        # The committed myst.yml uses base_url: / (correct for local preview).
+        # GitHub Pages serves this repo at /<repo-name>/, so rewrite it in the
+        # runner only (transient) before building. Edit is not committed.
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: 'sed -i "s|base_url: /|base_url: /${REPO_NAME}/|" myst.yml'
+      - name: Build HTML Assets
+        run: myst build --html
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_build/html'
+
+  deploy:
+    # Only deploy from a real push to img-optimize (skip PRs / manual dry runs).
+    if: github.ref == 'refs/heads/img-optimize' && github.event_name == 'push'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

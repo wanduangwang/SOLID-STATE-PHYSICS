@@ -248,4 +248,9 @@ which is shown in Fig. 1.7. At $T = T_c$, where $H_c = 0$, we thus have
 \Delta C = \frac{T_c}{4\pi} \left(\frac{dH_c}{dT}\right)^2.
 ```
 
+```{math}
+:label: eq-p4-ch01-11
+E_g=2\hbar\omega_D\exp\left(-\frac{\lambda_{ep}}{NV}\right)\simeq3.5k_BT_c
+```
+
 We note from Eq. 1.8 that at the critical temperature $H_c = 0$ so that there is no latent heat of transition ($\Delta S = 0$), but there is, according to Eq. 1.10, a discontinuity in the heat capacity. For this reason the phase transition at $T = T_c$ (where $H_c = 0$) is of second order, but away from $T_c$, the phase transition has a latent heat and is a first order phase transition.

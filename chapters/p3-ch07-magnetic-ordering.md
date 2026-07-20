@@ -269,9 +269,12 @@ V_{12} = \frac{e^2}{|\vec{r}_1 - \vec{r}_2|}.
 
 The one-electron Hamiltonians $\mathcal{H}_1(\vec{r}_1)$ and $\mathcal{H}_2(\vec{r}_2)$ can be solved directly each yielding an energy eigenvalue $E_0$, the energy for an electron in the field of a nucleus of charge $Z$. On the other hand, the interaction term $V_{12}$ expresses the Coulomb repulsion between the two electrons. The Coulomb energy is found approximately by perturbation theory using the eigenfunctions of $\mathcal{H}_1$ and $\mathcal{H}_2$ which are written as $\psi_1(\vec{r}_1)$ and $\psi_2(\vec{r}_2)$. We thus write the Coulomb energy
 
-$$C_{12} = \int\psi_1^*(\vec{r}_1)\psi_2^*(\vec{r}_2)
+```{math}
+:label: eq-p3-ch07-23
+C_{12} = \int\psi_1^*(\vec{r}_1)\psi_2^*(\vec{r}_2)
 \frac{e^2}{|\vec{r}_1-\vec{r}_2|}
-\psi_1(\vec{r}_1)\psi_2(\vec{r}_2)\,d^3r_1 d^3r_2. \tag{7.23}$$
+\psi_1(\vec{r}_1)\psi_2(\vec{r}_2)\,d^3r_1 d^3r_2.
+```
 
 In writing down the states for a 2-electron system, we recognize that the two electrons are identical and indistinguishable. We are also required to satisfy the Pauli Exclusion Principle which states that the 2-electron wave function must be totally antisymmetric under the interchange of the 2 electrons. We normally write the total wave function as a product of a spatial wave function with a spin function. In this situation, we have two options:
 
@@ -318,11 +321,17 @@ and this forms a product with the symmetric spatial function
 
 Although the Hamiltonian in Eq. {eq}`eq-p3-ch07-19` does not contain any explicit dependence on the electron spin, the energy of the system will be different if we calculate the expectation value for the Coulomb repulsion energy $V_{12}$ in the symmetric or antisymmetric spatial state. Explicitly this difference arises from
 
-$$\tfrac{1}{2}\int[\psi_1^*(1)\psi_2^*(2)\pm\psi_1^*(2)\psi_2^*(1)]V_{12}[\psi_1(1)\psi_2(2)\pm\psi_1(2)\psi_2(1)]\,d^3r_1 d^3r_2 = C_{12}\pm J_{12}, \tag{7.30}$$
+```{math}
+:label: eq-p3-ch07-30
+\tfrac{1}{2}\int[\psi_1^*(1)\psi_2^*(2)\pm\psi_1^*(2)\psi_2^*(1)]V_{12}[\psi_1(1)\psi_2(2)\pm\psi_1(2)\psi_2(1)]\,d^3r_1 d^3r_2 = C_{12}\pm J_{12},
+```
 
 where $J_{12}$ is the so-called **exchange energy**:
 
-$$J_{12} \equiv \int\psi_1^*(1)\psi_2^*(2)[e^2/|\vec{r}_1-\vec{r}_2|]\,\psi_1(2)\psi_2(1)\,d^3r_1 d^3r_2 \tag{7.31}$$
+```{math}
+:label: eq-p3-ch07-31
+J_{12} \equiv \int\psi_1^*(1)\psi_2^*(2)[e^2/|\vec{r}_1-\vec{r}_2|]\,\psi_1(2)\psi_2(1)\,d^3r_1 d^3r_2
+```
 
 and $J_{12}=J_{21}$. If $J_{12}>0$, the triplet state lies lower. Here the spins are lined up and $S=1$. For the singlet state we have $S=0$. We then can write:
 
@@ -368,7 +377,10 @@ for the spin symmetric (triplet) state, and
 
 for the spin antisymmetric (singlet) state, which allows us to write
 
-$$\Delta E=C_{12}-\tfrac{1}{2}J_{12}-2\vec{S}_1\cdot\vec{S}_2 J_{12}. \tag{7.38}$$
+```{math}
+:label: eq-p3-ch07-38
+\Delta E=C_{12}-\tfrac{1}{2}J_{12}-2\vec{S}_1\cdot\vec{S}_2 J_{12}.
+```
 
 The term $[-2\vec{S}_1\cdot\vec{S}_2]J_{12}$ is called the **Heisenberg Hamiltonian**.
 
@@ -383,6 +395,34 @@ To see how to generalize the exchange interaction to more than one electron we w
 \vdots & \vdots & & \vdots \\
 \psi_n(\vec{x}_1) & \psi_n(\vec{x}_2) & \cdots & \psi_n(\vec{x}_n)
 \end{vmatrix},
+```
+```{math}
+:label: eq-p3-ch07-40
+\psi (\vec{x} _ {1}, \vec{x} _ {2}) = \frac{1}{\sqrt{2}} [ \psi_{1} (\vec{x} _ {1}) \psi_{2} (\vec{x} _ {2}) - \psi_{1} (\vec{x} _ {2}) \psi_{2} (\vec{x} _ {1}) ]
+```
+```{math}
+:label: eq-p3-ch07-41
+\begin{array}{c} \psi_{1} (\vec{x} _ {1}, \vec{x} _ {2}) = \bigg (\frac{1}{\sqrt{2}} \bigg) [ \psi_{1} (\vec{r} _ {1}) \alpha_{1} \psi_{2} (\vec{r} _ {2}) \alpha_{2} - \psi_{1} (\vec{r} _ {2}) \alpha_{2} \psi_{2} (\vec{r} _ {1}) \alpha_{1} ] \\ = \alpha_{1} \alpha_{2} \bigg (\frac{1}{\sqrt{2}} \bigg) [ \psi_{1} (\vec{r} _ {1}) \psi_{2} (\vec{r} _ {2}) - \psi_{1} (\vec{r} _ {2}) \psi_{2} (\vec{r} _ {1}) ] \equiv \chi^ {S} (1, 1) \Psi^ {A} \end{array}
+```
+```{math}
+:label: eq-p3-ch07-42
+\psi_{2} (\vec{x} _ {1}, \vec{x} _ {2}) = \beta_{1} \beta_{2} \left(\frac{1}{\sqrt{2}}\right) \left[ \psi_{1} (\vec{r} _ {1}) \psi_{2} (\vec{r} _ {2}) - \psi_{1} (\vec{r} _ {2}) \psi_{2} (\vec{r} _ {1}) \right] \equiv \chi^ {S} (1, - 1) \Psi^ {A}
+```
+```{math}
+:label: eq-p3-ch07-43
+\left(\frac{1}{2}\right) \left[ \psi_{1} (\vec{r} _ {1}) \alpha_{1} \psi_{2} (\vec{r} _ {2}) \beta_{2} - \psi_{1} (\vec{r} _ {2}) \alpha_{2} \psi_{2} (\vec{r} _ {1}) \beta_{1} \right] \pm \left(\frac{1}{2}\right) \left[ \psi_{1} (\vec{r} _ {1}) \beta_{1} \psi_{2} (\vec{r} _ {2}) \alpha_{2} - \psi_{1} (\vec{r} _ {2}) \beta_{2} \psi_{2} (\vec{r} _ {1}) \alpha_{1} \right]
+```
+```{math}
+:label: eq-p3-ch07-44
+\psi_{3} (\vec{x} _ {1}, \vec{x} _ {2}) = \left(\frac{1}{\sqrt{2}}\right) [ \alpha_{1} \beta_{2} + \alpha_{2} \beta_{1} ] \left(\frac{1}{\sqrt{2}}\right) [ \psi_{1} (\vec{r} _ {1}) \psi_{2} (\vec{r} _ {2}) - \psi_{1} (\vec{r} _ {2}) \psi_{2} (\vec{r} _ {1}) ] \equiv \chi^ {S} (1, 0) \Psi^ {A}
+```
+```{math}
+:label: eq-p3-ch07-45
+\psi_{4} (\vec{x} _ {1}, \vec{x} _ {2}) = \left(\frac{1}{\sqrt{2}}\right) \left[ \alpha_{1} \beta_{2} - \alpha_{2} \beta_{1} \right] \left(\frac{1}{\sqrt{2}}\right) \left[ \psi_{1} (\vec{r} _ {1}) \psi_{2} (\vec{r} _ {2}) + \psi_{1} (\vec{r} _ {2}) \psi_{2} (\vec{r} _ {1}) \right] \equiv \chi^ {A} (1, 0) \Psi^ {S}.
+```
+```{math}
+:label: eq-p3-ch07-46
+\Psi (\vec{x} _ {1} \dots , \vec{x} _ {n}) = \frac{1}{\sqrt{n !}} \left| \begin{array}{c c c c} \psi_{1} (\vec{x} _ {1}) & \psi_{1} (\vec{x} _ {2}) & \ldots & \psi_{1} (\vec{x} _ {n}) \\ \psi_{2} (\vec{x} _ {1}) & \psi_{2} (\vec{x} _ {2}) & \ldots & \psi_{2} (\vec{x} _ {n}) \\ \vdots & \vdots & & \vdots \\ \psi_{n} (\vec{x} _ {1}) & \psi_{n} (\vec{x} _ {2}) & \ldots & \psi_{n} (\vec{x} _ {n}) \end{array} \right|
 ```
 
 and this determinantal form guarantees that no two electrons are in the same set of quantum states.
@@ -457,16 +497,30 @@ so that
 :label: eq-p3-ch07-56
 J_{ij}=\frac{Ng^2\mu_B^2\lambda_M\hat{\mu}}{2z}=\frac{3}{2}\frac{k_BT_c}{z j(j+1)}.
 ```
+```{math}
+:label: eq-p3-ch07-57
+J _ {i j} \sim \frac{3}{2} \frac{0.024 (1043 / 300)}{8 (1) (2)} \mathrm{eV} \sim 0.008 \mathrm{eV}
+```
+```{math}
+:label: eq-p3-ch07-58
+\mathcal{H} = - 2 J \vec{S _ {i}} \cdot \sum_{j = 1} ^ {z} \vec{S _ {j}} - g \mu_{B} \vec{B _ {e f f}} \cdot \sum_{j = 1} ^ {z} \vec{S _ {j}} - g \mu_{B} \vec{B} \cdot \vec{S _ {i}}
+```
 
 For iron, $z=8$, $T_c=1043$ K, $j=1$: $J_{ij}\sim 0.008$ eV.
 
 In carrying out practical calculations involving the Heisenberg Hamiltonian, the Ising model approximation is often introduced:
 
-$$\mathcal{H}=-2\sum'_{i,j}J_{ij}(S_x^i S_x^j+S_y^i S_y^j+S_z^i S_z^j) \tag{7.59}$$
+```{math}
+:label: eq-p3-ch07-59
+\mathcal{H}=-2\sum'_{i,j}J_{ij}(S_x^i S_x^j+S_y^i S_y^j+S_z^i S_z^j)
+```
 
 According to the Ising model, only the $z$ component survives:
 
-$$\mathcal{H}=-2\sum'_{i,j}J_{ij}S_z^i S_z^j \tag{7.60}$$
+```{math}
+:label: eq-p3-ch07-60
+\mathcal{H}=-2\sum'_{i,j}J_{ij}S_z^i S_z^j
+```
 
 :::{figure} images/fig-p3-ch07-5.png
 :name: fig-p3-ch07-5
@@ -497,18 +551,71 @@ For a simple antiferromagnet considering only nearest neighbor interactions:
 :label: eq-p3-ch07-63
 \vec{H}_A=-\lambda_{MAB}\vec{M}_B,\quad \vec{H}_B=-\lambda_{MAB}\vec{M}_A.
 ```
+```{math}
+:label: eq-p3-ch07-64
+M _ {A} = \left(\frac{C _ {A}}{T}\right) H _ {A t o t a l} = \left(\frac{C _ {A}}{T}\right) (H - \lambda_{M _ {A A}} M _ {A} - \lambda_{M _ {A B}} M _ {B})
+```
+```{math}
+:label: eq-p3-ch07-65
+M _ {B} = \left(\frac{C _ {B}}{T}\right) H _ {B t o t a l} = \left(\frac{C _ {B}}{T}\right) (H - \lambda_{M _ {A B}} M _ {A} - \lambda_{M _ {B B}} M _ {B})
+```
+```{math}
+:label: eq-p3-ch07-66
+C _ {A} = \frac{N _ {A} g ^ {2} \mu_{B} ^ {2} j (j + 1) \hat{\mu}}{3 k _ {B}},
+```
 
 Applying the analysis of 7.2 to each sublattice independently yields coupled linear equations whose non-trivial solution condition gives the ferrimagnetic Curie temperature:
 
-$$\begin{vmatrix} T_c+C\lambda_{MA} & \lambda_{MAB}C_A \\ \lambda_{MAB}C_B & T_c+\lambda_{MB}C_B \end{vmatrix}=0. \tag{7.67}$$
+```{math}
+:label: eq-p3-ch07-67
+\begin{vmatrix} T_c+C\lambda_{MA} & \lambda_{MAB}C_A \ \lambda_{MAB}C_B & T_c+\lambda_{MB}C_B \end{vmatrix}=0.
+```
+```{math}
+:label: eq-p3-ch07-68
+\chi = \frac{M _ {A} + M _ {B}}{H}.
+```
 
 For the antiferromagnetic case ($\lambda_{MA}=0$, $\lambda_{MB}=0$, $C_A=C_B=C$):
 
-$$\begin{vmatrix} T_c & \lambda_{MAB}C \\ \lambda_{MAB}C & T_c \end{vmatrix}=0 \tag{7.69}$$
+```{math}
+:label: eq-p3-ch07-69
+\begin{vmatrix} T_c & \lambda_{MAB}C \ \lambda_{MAB}C & T_c \end{vmatrix}=0
+```
+```{math}
+:label: eq-p3-ch07-70
+M _ {A} = \left(\frac{C}{T}\right) (H - \lambda_{M} M _ {B})
+```
+```{math}
+:label: eq-p3-ch07-71
+M _ {B} = \left(\frac{C}{T}\right) (H - \lambda_{M} M _ {A})
+```
+```{math}
+:label: eq-p3-ch07-72
+M _ {B} = \left(\frac{C}{T}\right) \left[ H - \left(\lambda_{M} \frac{C}{T}\right) \left(H - \lambda_{M} M _ {B}\right) \right]
+```
+```{math}
+:label: eq-p3-ch07-73
+M _ {B} (1 - \lambda_{M} ^ {2} C ^ {2} / T ^ {2}) = \left(\frac{C}{T}\right) \left(1 - \lambda_{M} \frac{C}{T}\right) H
+```
+```{math}
+:label: eq-p3-ch07-74
+M _ {B} \left(1 + \lambda_{M} \frac{C}{T}\right) = \frac{C H}{T}
+```
 
 or $T_c=\lambda_{MAB}C$. Writing $\lambda_{MAB}=\lambda_M$:
 
-$$M_B=\frac{CH}{T+\lambda_MC} \tag{7.75}$$
+```{math}
+:label: eq-p3-ch07-75
+M_B=\frac{CH}{T+\lambda_MC}
+```
+```{math}
+:label: eq-p3-ch07-76
+T _ {c} = \lambda_{M} C \qquad \mathrm{and} \qquad C = \frac{N g ^ {2} \mu_{B} ^ {2} j (j + 1) \hat{\mu}}{3 k _ {B}}.
+```
+```{math}
+:label: eq-p3-ch07-77
+M _ {A} = \frac{C H}{(T + \lambda_{M} C)}
+```
 
 yielding
 
@@ -520,6 +627,10 @@ M=M_A+M_B=\frac{2CH}{T+T_c},
 ```{math}
 :label: eq-p3-ch07-79
 \chi=\frac{2C}{T+T_c}.
+```
+```{math}
+:label: eq-p3-ch07-80
+T _ {c} = \lambda_{M} C.
 ```
 
 :::{figure} images/fig-p3-ch07-6.png
@@ -538,7 +649,10 @@ Fig. 7.9: Magnetic susceptibility of MnF$_2$, parallel and perpendicular to the 
 
 In the perpendicular orientation ($\vec{H}\perp$ sublattice magnetization):
 
-$$\chi_\perp\rightarrow\frac{1}{\lambda_{MAB}} \quad\text{as } T\to 0~K. \tag{7.81}$$
+```{math}
+:label: eq-p3-ch07-81
+\chi_\perp\rightarrow\frac{1}{\lambda_{MAB}} \quad\text{as } T\to 0~K.
+```
 
 :::{figure} images/fig-p3-ch07-7.png
 :name: fig-p3-ch07-7
@@ -606,6 +720,10 @@ Spin $p$ sees an exchange field:
 :label: eq-p3-ch07-86
 \vec{H}_p=\frac{2J}{g\mu_B}(\vec{S}_{p-1}+\vec{S}_{p+1}).
 ```
+```{math}
+:label: eq-p3-ch07-87
+\hbar \bigg (\frac{d \vec{S} _ {p}}{d t} \bigg) = \vec{\mu_{p}} \times \vec{H} _ {p}
+```
 
 The torque equation gives:
 
@@ -613,10 +731,41 @@ The torque equation gives:
 :label: eq-p3-ch07-88
 \frac{d\vec{S}_p}{dt}=\frac{2J}{\hbar}\,\vec{S}_p\times(\vec{S}_{p-1}+\vec{S}_{p+1}).
 ```
+```{math}
+:label: eq-p3-ch07-89
+\frac{d S _ {p} ^ {x}}{d t} = \bigg (\frac{2 J S}{\hbar} \bigg) (2 S _ {p} ^ {y} - S _ {p - 1} ^ {y} - S _ {p + 1} ^ {y})
+```
+```{math}
+:label: eq-p3-ch07-90
+\frac{d S _ {p} ^ {y}}{d t} = - \bigg (\frac{2 J S}{\hbar} \bigg) (2 S _ {p} ^ {x} - S _ {p - 1} ^ {x} - S _ {p + 1} ^ {x})
+```
+```{math}
+:label: eq-p3-ch07-91
+\frac{d S _ {p} ^ {z}}{d t} = 0.
+```
 
 Linearizing (assuming $S_x,S_y\ll S_z$, $S\sim S_z$) yields traveling wave solutions:
 
-$$S_x^p=u e^{i(pka-\omega t)}, \quad S_y^p=v e^{i(pka-\omega t)}, \quad S_z^p={\rm const}. \tag{7.92--7.93}$$
+```{math}
+:label: eq-p3-ch07-92
+S_x^p=u e^{i(pka-\omega t)},
+```
+```{math}
+:label: eq-p3-ch07-93
+S_y^p=v e^{i(pka-\omega t)}, \quad S_z^p={\rm const}.
+```
+```{math}
+:label: eq-p3-ch07-94
+- i \omega u = \left(\frac{2 J S}{\hbar}\right) (2 - 2 \cos k a) v
+```
+```{math}
+:label: eq-p3-ch07-95
+- i \omega v = - \bigg (\frac{2 J S}{\hbar} \bigg) (2 - 2 \cos k a) u
+```
+```{math}
+:label: eq-p3-ch07-96
+\left| \begin{array}{c c} i \omega & \left(\frac{4 J S}{\hbar}\right) (1 - \cos k a) \\ - \left(\frac{4 J S}{\hbar}\right) (1 - \cos k a) & i \omega \end{array} \right| = 0
+```
 
 Substitution gives the dispersion relation
 
@@ -647,12 +796,52 @@ Quantization of spin waves gives the **magnon**, with excitation energy
 :label: eq-p3-ch07-99
 E_k=n_k\,\hbar\omega_k,
 ```
+```{math}
+:label: eq-p3-ch07-100
+\omega_{k} = (4 J S / \hbar) (1 - \cos k a).
+```
 
 where $n_k$ is given by the Bose factor
 
 ```{math}
 :label: eq-p3-ch07-101
 n_k=\frac{1}{e^{\hbar\omega_k/k_BT}-1}.
+```
+```{math}
+:label: eq-p3-ch07-102
+\rho (\omega_{k}) d \omega_{k} = \frac{1}{(2 \pi) ^ {3}} 4 \pi k ^ {2} \bigg (\frac{d k}{d \omega_{k}} \bigg) d \omega_{k}
+```
+```{math}
+:label: eq-p3-ch07-103
+\sum_{k} n _ {k} = \int n _ {k} \rho (\omega_{k}) d \omega_{k}.
+```
+```{math}
+:label: eq-p3-ch07-104
+\frac{d \omega_{k}}{d k} = \left(\frac{4 J S}{\hbar}\right) a \sin k a \sim \frac{4 J S}{\hbar} a ^ {2} k
+```
+```{math}
+:label: eq-p3-ch07-105
+\omega_{k} = \left(\frac{4 J S}{\hbar}\right) (1 - \cos k a) \sim \left(\frac{2 J S}{\hbar}\right) k ^ {2} a ^ {2}
+```
+```{math}
+:label: eq-p3-ch07-106
+k \sim \left(\frac{1}{a}\right) \sqrt{\frac{\hbar \omega_{k}}{2 J S}}.
+```
+```{math}
+:label: eq-p3-ch07-107
+\sum_{k} n _ {k} \simeq \frac{1}{2} \pi^ {2} \int \frac{(\hbar k d \omega_{k})}{(4 J S a ^ {2}) (e ^ {\hbar \omega_{k} / k _ {B} T} - 1)}
+```
+```{math}
+:label: eq-p3-ch07-108
+\sum_{k} n _ {k} = \left(\frac{\hbar}{8 \pi^ {2} J S a ^ {3}}\right) \sqrt{\frac{\hbar}{2 J S}} \int \frac{\omega_{k} ^ {\frac{1}{2}} d \omega_{k}}{e ^ {\hbar \omega_{k} / k _ {B} T} - 1}
+```
+```{math}
+:label: eq-p3-ch07-109
+x = \frac{\hbar \omega_{k}}{k _ {B} T}
+```
+```{math}
+:label: eq-p3-ch07-110
+\sum_{k} n _ {k} \cong (\frac{1}{4 \pi^ {2}}) \biggl (\frac{k _ {B} T}{2 J S a ^ {2}} \biggr) ^ {3 / 2} \int_{0} ^ {\infty} x ^ {\frac{1}{2}} \frac{d x}{e ^ {x} - 1}
 ```
 
 The total number of magnons excited at low temperature is proportional to $T^{3/2}$, implying the magnetization near $T=0$ also shows a $T^{3/2}$ dependence.
@@ -669,6 +858,10 @@ with finite initial slope at $k=0$, in contrast to ferromagnets where
 ```{math}
 :label: eq-p3-ch07-112
 \omega_k=\frac{4JS}{\hbar}(1-\cos ka)\simeq\frac{2JS}{\hbar}k^2a^2.
+```
+```{math}
+:label: eq-p3-ch07-113
+\left(\frac{\partial \omega_{k}}{\partial k}\right) _ {k = 0} = 0.
 ```
 
 Experimentally, however, antiferromagnets also show zero initial slope due to anisotropy field effects.
@@ -694,6 +887,10 @@ The magnetic moments in a magnetic material tend to line up preferentially along
 ```{math}
 :label: eq-p3-ch07-114
 U_K = K_1(\alpha_1^2\alpha_2^2+\alpha_2^2\alpha_3^2+\alpha_3^2\alpha_1^2)+K_2\alpha_1^2\alpha_2^2\alpha_3^2+\cdots,
+```
+```{math}
+:label: eq-p3-ch07-115
+\mathcal{H} = - 2 J \vec{S _ {i}} \cdot \vec{S _ {j}}.
 ```
 
 where $\alpha_i$ represents direction cosines and $K_1,K_2$ are magnetic anisotropy constants having units of energy density. Only even powers appear due to inversion symmetry and cubic symmetry requirements.
@@ -743,11 +940,29 @@ Fig. 7.20: Schematic structure of a Bloch wall separating magnetic domains. In i
 
 From the Heisenberg Hamiltonian for a pair of spins, assuming small angle $\phi$:
 
-$$\mathcal{H}=-2JS^2\cos\phi\simeq-2JS^2+\tfrac{1}{2}JS^2\phi^2=-2JS^2+JS^2\phi^2. \tag{7.116}$$
+```{math}
+:label: eq-p3-ch07-116
+\mathcal{H}=-2JS^2\cos\phi\simeq-2JS^2+\tfrac{1}{2}JS^2\phi^2=-2JS^2+JS^2\phi^2.
+```
+```{math}
+:label: eq-p3-ch07-117
+E _ {e x} = N J S ^ {2} \pi^ {2} / N ^ {2}.
+```
 
 For $N$ spins in a Bloch wall with total rotation $\pi$ ($\phi=\pi/N$), the exchange energy per unit area is
 
-$$\sigma_W=\sigma_{\rm ex}+\sigma_{\rm anis}=\frac{JS^2\pi^2}{Na^2}+KNa. \tag{7.118--7.119}$$
+```{math}
+:label: eq-p3-ch07-118
+\sigma_W=\sigma_{\rm ex}+\sigma_{\rm anis}.
+```
+```{math}
+:label: eq-p3-ch07-119
+\sigma_W=\frac{JS^2\pi^2}{Na^2}+KNa.
+```
+```{math}
+:label: eq-p3-ch07-120
+\frac{\partial \sigma_{W}}{\partial N} = 0 = - \frac{J S ^ {2} \pi^ {2}}{N ^ {2} a ^ {2}} + K a
+```
 
 At equilibrium ($\partial\sigma_W/\partial N=0$):
 
